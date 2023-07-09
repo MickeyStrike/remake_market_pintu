@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PintuLogo from '../assets/svg/PintuLogo'
 import ID from '../assets/svg/Id'
 import DownArrow from '../assets/svg/DownArrow'
+import TripleLine from '../assets/svg/TripleLine'
 
 export default function Headers() {
   return (
@@ -11,7 +12,7 @@ export default function Headers() {
         <Link to='/'>
           <PintuLogo />
         </Link>
-        <div className='flex flex-row gap-[5rem] font-medium'>
+        <div className='flex flex-row xl:gap-[5rem] gap-[2rem] max-md:hidden font-medium'>
           <Link to='/fitur'>Fitur</Link>
           <Link to='/ptu'>PTU</Link>
           <Link to='/edukasi'>Edukasi</Link>
@@ -25,6 +26,9 @@ export default function Headers() {
               <DownArrow />
             </div>
           </span>
+        </div>
+        <div className='md:hidden'>
+          <TripleLine />
         </div>
       </div>
     </div>
