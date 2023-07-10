@@ -2,7 +2,7 @@ import axios from "axios";
 import { ResponsePriceChange, ResponseSupportedCurrencies, ResponseTags } from "../interface";
 
 const instance = axios.create({
-  baseURL: 'https://remake-market-pintu.vercel.app',
+  baseURL: 'http://localhost:8001',
   headers: {
     "Content-Type": 'application/json'
   }
